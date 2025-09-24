@@ -1,8 +1,13 @@
 This repository contains the code and procedures for compiling and running **Whisper-tiny** models on the **Banana Pi F3**, using **TVM** with BYOC integration and an **RVV-optimized matmul operator**.
 
+
+
+You can find the experimental results and detailed analysis in [result.pdf](result.pdf), including the successful design and implementation of a custom Codegen supporting the RISC-V RVV instruction set, offloading the matmul operator to the RISC-V platform with **\~20× speedup on the encoder and \~11.7× on decoder prefill, and achieving an overall inference speedup of 9.6× with full performance quantification.**
+
 For details on our previous experiment history, see the [Notion page](https://930727fre.notion.site/TVM-13ee0e612db880d48360ffab26babdc0).
 
-The `/archive` directory contains deprecated developmental code. While no longer maintained, it may still be useful for reference.
+
+The notion's `/archive` directory contains deprecated developmental code. While no longer maintained, it may still be useful for reference.
 
 ---
 
@@ -105,7 +110,7 @@ Note: Bianbu 2.2 is derived from Ubuntu 24.04
         -o libmatmul.so libmatmul.cpp
     
     ```
-    Note: you can also try libmatmul_golden.cpp. This is a textbook-level implementation of matrix multiplication from linear algebra. Just for testing out the difference with our rvv+algorithmic implementation. The compilation usage is same as the above libmatmul.cpp’s g++ command.
+    Note: you can also try `libmatmul_golden.cpp`. This is a textbook-level implementation of matrix multiplication from linear algebra. Just for testing out the difference with our rvv+algorithmic implementation. The compilation usage is same as the above libmatmul.cpp’s g++ command.
 4. Download whisper-tiny models from hugging face, this step is necessary, because tokenizer and vocab.json is required
     
     https://huggingface.co/onnx-community/whisper-tiny/tree/main
