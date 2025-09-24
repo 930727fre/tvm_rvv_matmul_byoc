@@ -1,4 +1,11 @@
-# Envrionment setup
+This repository contains the code and procedures for compiling and running **Whisper-tiny** models on the **Banana Pi F3**, using **TVM** with BYOC integration and an **RVV-optimized matmul operator**.
+
+For details on our previous experiment history, see the [Notion page](https://930727fre.notion.site/TVM-13ee0e612db880d48360ffab26babdc0).
+
+The `/archive` directory contains deprecated developmental code. While no longer maintained, it may still be useful for reference.
+
+---
+
 
 # Setup
 
