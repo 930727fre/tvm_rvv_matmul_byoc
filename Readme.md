@@ -1,15 +1,16 @@
 This repository contains the code and procedures for compiling and running **Whisper-tiny** models on the **Banana Pi F3**, using **TVM** with BYOC integration and an **RVV-optimized matmul operator**.
 
-
-
 You can find the experimental results and detailed analysis in [result.pdf](result.pdf), including the successful design and implementation of a custom Codegen supporting the RISC-V RVV instruction set, offloading the matmul operator to the RISC-V platform with **\~20× speedup on the encoder and \~11.7× on decoder prefill, and achieving an overall inference speedup of 9.6× with full performance quantification.**
+
+
+The `./profile_data` directory contains operator-level profiling data provided by the TVM API, including results for **baseline**, **rvv\_O3**, **rvv\_O0**, and **classic** (a textbook `ijk` matmul implementation for reference).
 
 For details on our previous experiment history, see the [Notion page](https://930727fre.notion.site/TVM-13ee0e612db880d48360ffab26babdc0).
 
-
-The notion's `/archive` directory contains deprecated developmental code. While no longer maintained, it may still be useful for reference.
+The Notion’s `/archive` directory contains deprecated developmental code. While no longer maintained, it may still be useful for reference.
 
 ---
+
 
 
 # Setup

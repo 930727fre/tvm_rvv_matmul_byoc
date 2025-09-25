@@ -1,0 +1,443 @@
+Argument Shapes,Count,Device,Duration (us),Name,Percent
+"int64[1, 1]",1,"cpu0",14.75,"vm.builtin.check_tensor_info",0.000728177
+"float32[1, 6, 10, 64]",1,"cpu0",7.917,"vm.builtin.check_tensor_info",0.000390846
+"float32[1, 6, 10, 64]",1,"cpu0",7.708,"vm.builtin.check_tensor_info",0.000380528
+"float32[1, 6, 1500, 64]",1,"cpu0",6.292,"vm.builtin.check_tensor_info",0.000310623
+"float32[1, 6, 1500, 64]",1,"cpu0",7.959,"vm.builtin.check_tensor_info",0.000392919
+"float32[1, 6, 10, 64]",1,"cpu0",6.791,"vm.builtin.check_tensor_info",0.000335257
+"float32[1, 6, 10, 64]",1,"cpu0",5.792,"vm.builtin.check_tensor_info",0.000285939
+"float32[1, 6, 1500, 64]",1,"cpu0",6.667,"vm.builtin.check_tensor_info",0.000329136
+"float32[1, 6, 1500, 64]",1,"cpu0",6.542,"vm.builtin.check_tensor_info",0.000322965
+"float32[1, 6, 10, 64]",1,"cpu0",5.792,"vm.builtin.check_tensor_info",0.000285939
+"float32[1, 6, 10, 64]",1,"cpu0",5.625,"vm.builtin.check_tensor_info",0.000277695
+"float32[1, 6, 1500, 64]",1,"cpu0",5.792,"vm.builtin.check_tensor_info",0.000285939
+"float32[1, 6, 1500, 64]",1,"cpu0",5.75,"vm.builtin.check_tensor_info",0.000283865
+"float32[1, 6, 10, 64]",1,"cpu0",5.25,"vm.builtin.check_tensor_info",0.000259182
+"float32[1, 6, 10, 64]",1,"cpu0",5.667,"vm.builtin.check_tensor_info",0.000279768
+"float32[1, 6, 1500, 64]",1,"cpu0",5.459,"vm.builtin.check_tensor_info",0.000269499
+"float32[1, 6, 1500, 64]",1,"cpu0",5.917,"vm.builtin.check_tensor_info",0.00029211
+"int64[1, 1], int64[5]",1,"cpu0",11.084,"vm.builtin.match_shape",0.000547194
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",7.75,"vm.builtin.match_shape",0.000382601
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",8.583,"vm.builtin.match_shape",0.000423725
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",7.125,"vm.builtin.match_shape",0.000351746
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",7.167,"vm.builtin.match_shape",0.00035382
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",9.292,"vm.builtin.match_shape",0.000458727
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",6.791,"vm.builtin.match_shape",0.000335257
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",6.334,"vm.builtin.match_shape",0.000312696
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",6.5,"vm.builtin.match_shape",0.000320891
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",6.167,"vm.builtin.match_shape",0.000304452
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",6.458,"vm.builtin.match_shape",0.000318818
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",7.833,"vm.builtin.match_shape",0.000386699
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",6.375,"vm.builtin.match_shape",0.00031472
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",6.708,"vm.builtin.match_shape",0.00033116
+"float32[1, 6, 10, 64], int64[5]",1,"cpu0",7.042,"vm.builtin.match_shape",0.000347649
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",8,"vm.builtin.match_shape",0.000394943
+"float32[1, 6, 1500, 64], int64[5]",1,"cpu0",7.458,"vm.builtin.match_shape",0.000368186
+"int64[5]",1,"cpu0",7.083,"shape_func",0.000349673
+"int64[1, 1]",1,"cpu0",14.376,"vm.builtin.reshape",0.000709713
+"float32[51865, 384], int64[1, 1], float32[1, 1, 384]",1,"cpu0",17.042,"take",0.000841328
+"int64[5]",1,"cpu0",8.667,"vm.builtin.make_shape",0.000427872
+"float32[448, 384], float32[1, 384]",1,"cpu0",18.168,"vm.builtin.call_tir_dyn",0.000896916
+"float32[1, 1, 384], float32[1, 384], float32[1, 1, 384]",1,"cpu0",15.542,"add",0.000767276
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",16.042,"mean",0.00079196
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",13.875,"subtract",0.00068498
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",13.292,"power",0.000656198
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",12.792,"mean",0.000631514
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.167,"add1",0.000452556
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8,"tir_sqrt",0.000394943
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.959,"divide",0.000935966
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.042,"multiply",0.000742592
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.376,"add2",0.000857817
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4832.56,"matmul",0.238573
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",23.918,"add3",0.00118078
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4868.44,"matmul",0.240345
+"float32[1, 1, 384]",1,"cpu0",26.209,"vm.builtin.reshape",0.00129388
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",5022.53,"matmul",0.247952
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.917,"add3",0.001082
+"float32[1, 1, 384]",1,"cpu0",15.375,"vm.builtin.reshape",0.000759032
+"float32[1, 1, 6, 64]",1,"cpu0",14.084,"vm.builtin.reshape",0.000695298
+"float32[1, 1, 6, 64]",1,"cpu0",8.417,"vm.builtin.reshape",0.00041553
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.667,"multiply1",0.000773447
+"float32[1, 1, 384]",1,"cpu0",8.375,"vm.builtin.reshape",0.000413456
+"float32[1, 1, 6, 64]",1,"cpu0",8.709,"vm.builtin.reshape",0.000429945
+"int64[5]",1,"cpu0",13.75,"vm.builtin.make_shape",0.000678809
+"int64[5]",1,"cpu0",10.625,"vm.builtin.make_shape",0.000524534
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",25.418,"concatenate",0.00125483
+"int64[5]",1,"cpu0",10.125,"vm.builtin.make_shape",0.00049985
+"int64[5]",1,"cpu0",10.834,"vm.builtin.make_shape",0.000534852
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",19.042,"concatenate",0.000940064
+"int64[5]",1,"cpu0",10.334,"vm.builtin.make_shape",0.000510168
+"float32[1, 6, 11, 64]",1,"cpu0",9.875,"vm.builtin.reshape",0.000487508
+"float32[1, 6, 1, 64]",1,"cpu0",7.583,"vm.builtin.reshape",0.000374357
+"int64[5]",1,"cpu0",7.459,"vm.builtin.make_shape",0.000368235
+"int64[5]",1,"cpu0",8.376,"vm.builtin.make_shape",0.000413506
+"int64[5]",1,"cpu0",7.042,"vm.builtin.make_shape",0.000347649
+"float32[6, 11, 64], float32[6, 64, 11]",1,"cpu0",96.42,"vm.builtin.call_tir_dyn",0.00476005
+"int64[5]",1,"cpu0",8.625,"vm.builtin.make_shape",0.000425798
+"int64[5]",1,"cpu0",8.916,"vm.builtin.make_shape",0.000440164
+"int64[5]",1,"cpu0",6.75,"vm.builtin.make_shape",0.000333233
+"float32[6, 1, 64], float32[6, 64, 11], float32[6, 1, 11]",1,"cpu0",125.42,"vm.builtin.call_tir_dyn",0.00619172
+"int64[5]",1,"cpu0",8.083,"vm.builtin.make_shape",0.000399041
+"int64[5]",1,"cpu0",8.709,"vm.builtin.make_shape",0.000429945
+"int64[5]",1,"cpu0",6.583,"vm.builtin.make_shape",0.000324989
+"float32[6, 1, 11], float32[6, 1, 11]",1,"cpu0",40.626,"vm.builtin.call_tir_dyn",0.00200562
+"int64[5]",1,"cpu0",9.084,"vm.builtin.make_shape",0.000448458
+"float32[1, 6, 11, 64]",1,"cpu0",8.334,"vm.builtin.reshape",0.000411432
+"int64[5]",1,"cpu0",7.5,"vm.builtin.make_shape",0.000370259
+"float32[6, 1, 11], float32[6, 11, 64], float32[6, 1, 64]",1,"cpu0",132.712,"vm.builtin.call_tir_dyn",0.00655171
+"float32[6, 1, 64]",1,"cpu0",8.5,"vm.builtin.reshape",0.000419627
+"float32[1, 6, 1, 64]",1,"cpu0",7.083,"vm.builtin.reshape",0.000349673
+"float32[1, 1, 6, 64]",1,"cpu0",72.252,"vm.builtin.reshape",0.00356693
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4851.48,"matmul",0.239507
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.376,"add3",0.00105529
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.625,"add4",0.000870109
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",19.584,"mean",0.000966821
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",16.459,"subtract",0.000812546
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",16.126,"power",0.000796107
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.542,"mean",0.000717908
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.626,"add1",0.000524583
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.042,"tir_sqrt",0.000446385
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",19.959,"divide",0.000985334
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.792,"multiply",0.000779618
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.834,"add2",0.000831059
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4819.52,"matmul",0.23793
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",20.584,"add3",0.00101619
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",16.917,"multiply1",0.000835157
+"float32[1, 1, 384]",1,"cpu0",15.25,"vm.builtin.reshape",0.000752861
+"float32[1, 1, 6, 64]",1,"cpu0",8.334,"vm.builtin.reshape",0.000411432
+"float32[1, 6, 1500, 64]",1,"cpu0",9.959,"vm.builtin.reshape",0.000491655
+"float32[1, 6, 1, 64]",1,"cpu0",10.167,"vm.builtin.reshape",0.000501924
+"float32[6, 1500, 64], float32[6, 64, 1500]",1,"cpu0",9928.67,"transpose3",0.490158
+"float32[6, 1, 64], float32[6, 64, 1500], float32[6, 1, 1500]",1,"cpu0",26760.7,"matmul3",1.32112
+"float32[6, 1, 1500], float32[6, 1, 1500]",1,"cpu0",1118.66,"softmax1",0.0552259
+"float32[1, 6, 1500, 64]",1,"cpu0",17.709,"vm.builtin.reshape",0.000874256
+"float32[6, 1, 1500], float32[6, 1500, 64], float32[6, 1, 64]",1,"cpu0",15247,"matmul4",0.752715
+"float32[6, 1, 64]",1,"cpu0",27.376,"vm.builtin.reshape",0.0013515
+"float32[1, 6, 1, 64]",1,"cpu0",11.834,"vm.builtin.reshape",0.00058422
+"float32[1, 1, 6, 64]",1,"cpu0",9.958,"vm.builtin.reshape",0.000491606
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4831.69,"matmul",0.23853
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.126,"add3",0.00104295
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.084,"add4",0.000843401
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",18.959,"mean",0.000935966
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",15.542,"subtract",0.000767276
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.084,"power",0.000744666
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",15.001,"mean",0.000740568
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.584,"add1",0.000473142
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8.834,"tir_sqrt",0.000436116
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",19.167,"divide",0.000946235
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.584,"multiply",0.00076935
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.917,"add2",0.000835157
+"float32[1, 1, 384], float32[384, 1536], float32[1, 1, 1536]",1,"cpu0",149085,"matmul5",7.36001
+"float32[1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",36.085,"add5",0.00178144
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.126,"divide1",0.00143789
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",258.133,"erf",0.0127435
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",28.751,"add6",0.00141938
+"float32[1, 1, 1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",30.334,"multiply2",0.00149753
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.667,"multiply3",0.0014646
+"float32[1, 1, 1536], float32[1536, 384], float32[1, 1, 384]",1,"cpu0",22452,"matmul6",1.10841
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",19.876,"add3",0.000981237
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.667,"add4",0.000872183
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.834,"mean",0.000880427
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",61.918,"subtract",0.00305676
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.167,"power",0.00104497
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",15.375,"mean",0.000759032
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8.708,"add1",0.000429896
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8.125,"tir_sqrt",0.000401114
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",17.833,"divide",0.000880378
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",18.75,"multiply",0.000925648
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.501,"add2",0.000863988
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4835.81,"matmul",0.238734
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",22.834,"add3",0.00112727
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4828.85,"matmul",0.23839
+"float32[1, 1, 384]",1,"cpu0",28.417,"vm.builtin.reshape",0.00140289
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4820.27,"matmul",0.237967
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",24.043,"add3",0.00118695
+"float32[1, 1, 384]",1,"cpu0",14.709,"vm.builtin.reshape",0.000726153
+"float32[1, 1, 6, 64]",1,"cpu0",13.5,"vm.builtin.reshape",0.000666467
+"float32[1, 1, 6, 64]",1,"cpu0",8.25,"vm.builtin.reshape",0.000407285
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.584,"multiply1",0.00076935
+"float32[1, 1, 384]",1,"cpu0",7.959,"vm.builtin.reshape",0.000392919
+"float32[1, 1, 6, 64]",1,"cpu0",11.125,"vm.builtin.reshape",0.000549218
+"int64[5]",1,"cpu0",14.001,"vm.builtin.make_shape",0.0006912
+"int64[5]",1,"cpu0",14.167,"vm.builtin.make_shape",0.000699395
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",27.917,"concatenate",0.0013782
+"int64[5]",1,"cpu0",8.459,"vm.builtin.make_shape",0.000417603
+"int64[5]",1,"cpu0",9.334,"vm.builtin.make_shape",0.0004608
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",20.709,"concatenate",0.00102236
+"int64[5]",1,"cpu0",9.375,"vm.builtin.make_shape",0.000462824
+"float32[1, 6, 11, 64]",1,"cpu0",10.417,"vm.builtin.reshape",0.000514266
+"float32[1, 6, 1, 64]",1,"cpu0",7.417,"vm.builtin.reshape",0.000366162
+"int64[5]",1,"cpu0",8.251,"vm.builtin.make_shape",0.000407335
+"int64[5]",1,"cpu0",7.208,"vm.builtin.make_shape",0.000355844
+"float32[6, 11, 64], float32[6, 64, 11]",1,"cpu0",95.378,"vm.builtin.call_tir_dyn",0.00470861
+"int64[5]",1,"cpu0",8.667,"vm.builtin.make_shape",0.000427872
+"int64[5]",1,"cpu0",8.083,"vm.builtin.make_shape",0.000399041
+"float32[6, 1, 64], float32[6, 64, 11], float32[6, 1, 11]",1,"cpu0",124.712,"vm.builtin.call_tir_dyn",0.00615677
+"int64[5]",1,"cpu0",8.709,"vm.builtin.make_shape",0.000429945
+"int64[5]",1,"cpu0",7.084,"vm.builtin.make_shape",0.000349722
+"float32[6, 1, 11], float32[6, 1, 11]",1,"cpu0",42.335,"vm.builtin.call_tir_dyn",0.00208999
+"int64[5]",1,"cpu0",9.792,"vm.builtin.make_shape",0.000483411
+"float32[1, 6, 11, 64]",1,"cpu0",12.917,"vm.builtin.reshape",0.000637685
+"int64[5]",1,"cpu0",8.125,"vm.builtin.make_shape",0.000401114
+"float32[6, 1, 11], float32[6, 11, 64], float32[6, 1, 64]",1,"cpu0",127.295,"vm.builtin.call_tir_dyn",0.00628429
+"float32[6, 1, 64]",1,"cpu0",8.667,"vm.builtin.reshape",0.000427872
+"float32[1, 6, 1, 64]",1,"cpu0",8.083,"vm.builtin.reshape",0.000399041
+"float32[1, 1, 6, 64]",1,"cpu0",6.417,"vm.builtin.reshape",0.000316794
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4841.1,"matmul",0.238995
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",20.751,"add3",0.00102443
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.209,"add4",0.000849572
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.459,"mean",0.000861914
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",14.833,"subtract",0.000732274
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.459,"power",0.000763179
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.959,"mean",0.000738495
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.25,"add1",0.000456653
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.459,"tir_sqrt",0.000516339
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",19.876,"divide",0.000981237
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.667,"multiply",0.000773447
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.126,"add2",0.000746739
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4848.4,"matmul",0.239355
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.667,"add3",0.00106965
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",13.917,"multiply1",0.000687053
+"float32[1, 1, 384]",1,"cpu0",16.126,"vm.builtin.reshape",0.000796107
+"float32[1, 1, 6, 64]",1,"cpu0",9.417,"vm.builtin.reshape",0.000464898
+"float32[1, 6, 1500, 64]",1,"cpu0",8.958,"vm.builtin.reshape",0.000442238
+"float32[1, 6, 1, 64]",1,"cpu0",9.667,"vm.builtin.reshape",0.00047724
+"float32[6, 1500, 64], float32[6, 64, 1500]",1,"cpu0",9846.59,"transpose3",0.486106
+"float32[6, 1, 64], float32[6, 64, 1500], float32[6, 1, 1500]",1,"cpu0",26980.6,"matmul3",1.33197
+"float32[6, 1, 1500], float32[6, 1, 1500]",1,"cpu0",1115.99,"softmax1",0.0550942
+"float32[1, 6, 1500, 64]",1,"cpu0",18.293,"vm.builtin.reshape",0.000903087
+"float32[6, 1, 1500], float32[6, 1500, 64], float32[6, 1, 64]",1,"cpu0",15230.7,"matmul4",0.751906
+"float32[6, 1, 64]",1,"cpu0",23.042,"vm.builtin.reshape",0.00113754
+"float32[1, 6, 1, 64]",1,"cpu0",10.876,"vm.builtin.reshape",0.000536925
+"float32[1, 1, 6, 64]",1,"cpu0",10.709,"vm.builtin.reshape",0.000528681
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4841.77,"matmul",0.239028
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",22.834,"add3",0.00112727
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",16.459,"add4",0.000812546
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",18.834,"mean",0.000929795
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",16.125,"subtract",0.000796058
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.959,"power",0.000738495
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.709,"mean",0.000726153
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",11.042,"add1",0.00054512
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.292,"tir_sqrt",0.000458727
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.667,"divide",0.000921551
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.251,"multiply",0.000851646
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.667,"add2",0.000872183
+"float32[1, 1, 384], float32[384, 1536], float32[1, 1, 1536]",1,"cpu0",148655,"matmul5",7.33879
+"float32[1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",34.585,"add5",0.00170739
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",30.501,"divide1",0.00150577
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",249.591,"erf",0.0123218
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",28.459,"add6",0.00140496
+"float32[1, 1, 1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.876,"multiply2",0.00147492
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.418,"multiply3",0.00145231
+"float32[1, 1, 1536], float32[1536, 384], float32[1, 1, 384]",1,"cpu0",22260,"matmul6",1.09893
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.959,"add3",0.00108407
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",20.084,"add4",0.000991505
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.584,"mean",0.000868085
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",17.167,"subtract",0.000847499
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.209,"power",0.000701469
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.209,"mean",0.000701469
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.167,"add1",0.000501924
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.334,"tir_sqrt",0.0004608
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",19.001,"divide",0.00093804
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.543,"multiply",0.000866061
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.792,"add2",0.000828986
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4834.85,"matmul",0.238687
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.917,"add3",0.001082
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4825.06,"matmul",0.238203
+"float32[1, 1, 384]",1,"cpu0",27.709,"vm.builtin.reshape",0.00136794
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4899.23,"matmul",0.241865
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.334,"add3",0.00105322
+"float32[1, 1, 384]",1,"cpu0",15.001,"vm.builtin.reshape",0.000740568
+"float32[1, 1, 6, 64]",1,"cpu0",10.001,"vm.builtin.reshape",0.000493728
+"float32[1, 1, 6, 64]",1,"cpu0",8.75,"vm.builtin.reshape",0.000431969
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.292,"multiply1",0.00085367
+"float32[1, 1, 384]",1,"cpu0",8.5,"vm.builtin.reshape",0.000419627
+"float32[1, 1, 6, 64]",1,"cpu0",12.25,"vm.builtin.reshape",0.000604757
+"int64[5]",1,"cpu0",13.876,"vm.builtin.make_shape",0.000685029
+"int64[5]",1,"cpu0",11.626,"vm.builtin.make_shape",0.000573951
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",28.251,"concatenate",0.00139469
+"int64[5]",1,"cpu0",14.292,"vm.builtin.make_shape",0.000705566
+"int64[5]",1,"cpu0",11.5,"vm.builtin.make_shape",0.000567731
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",28.918,"concatenate",0.00142762
+"int64[5]",1,"cpu0",10.001,"vm.builtin.make_shape",0.000493728
+"float32[1, 6, 11, 64]",1,"cpu0",12.708,"vm.builtin.reshape",0.000627367
+"float32[1, 6, 1, 64]",1,"cpu0",10.25,"vm.builtin.reshape",0.000506021
+"int64[5]",1,"cpu0",9.5,"vm.builtin.make_shape",0.000468995
+"int64[5]",1,"cpu0",6.709,"vm.builtin.make_shape",0.000331209
+"float32[6, 11, 64], float32[6, 64, 11]",1,"cpu0",109.628,"vm.builtin.call_tir_dyn",0.00541211
+"int64[5]",1,"cpu0",9.167,"vm.builtin.make_shape",0.000452556
+"int64[5]",1,"cpu0",7.833,"vm.builtin.make_shape",0.000386699
+"float32[6, 1, 64], float32[6, 64, 11], float32[6, 1, 11]",1,"cpu0",127.629,"vm.builtin.call_tir_dyn",0.00630078
+"int64[5]",1,"cpu0",8.625,"vm.builtin.make_shape",0.000425798
+"int64[5]",1,"cpu0",7.917,"vm.builtin.make_shape",0.000390846
+"float32[6, 1, 11], float32[6, 1, 11]",1,"cpu0",43.043,"vm.builtin.call_tir_dyn",0.00212494
+"int64[5]",1,"cpu0",8.834,"vm.builtin.make_shape",0.000436116
+"float32[1, 6, 11, 64]",1,"cpu0",9.959,"vm.builtin.reshape",0.000491655
+"int64[5]",1,"cpu0",8.584,"vm.builtin.make_shape",0.000423774
+"float32[6, 1, 11], float32[6, 11, 64], float32[6, 1, 64]",1,"cpu0",137.129,"vm.builtin.call_tir_dyn",0.00676977
+"float32[6, 1, 64]",1,"cpu0",8.25,"vm.builtin.reshape",0.000407285
+"float32[1, 6, 1, 64]",1,"cpu0",7.542,"vm.builtin.reshape",0.000372333
+"float32[1, 1, 6, 64]",1,"cpu0",8,"vm.builtin.reshape",0.000394943
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4851.44,"matmul",0.239505
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",23.293,"add3",0.00114993
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",86.252,"add4",0.00425808
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.209,"mean",0.000849572
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",16.334,"subtract",0.000806375
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.709,"power",0.000726153
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",15.209,"mean",0.000750837
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.126,"add1",0.000450532
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.209,"tir_sqrt",0.000454629
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",17.875,"divide",0.000882451
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.168,"multiply",0.00079818
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.167,"add2",0.000798131
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",5000.61,"matmul",0.24687
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",20.125,"add3",0.000993529
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",16.125,"multiply1",0.000796058
+"float32[1, 1, 384]",1,"cpu0",15.542,"vm.builtin.reshape",0.000767276
+"float32[1, 1, 6, 64]",1,"cpu0",9.875,"vm.builtin.reshape",0.000487508
+"float32[1, 6, 1500, 64]",1,"cpu0",14.584,"vm.builtin.reshape",0.000719982
+"float32[1, 6, 1, 64]",1,"cpu0",9.208,"vm.builtin.reshape",0.00045458
+"float32[6, 1500, 64], float32[6, 64, 1500]",1,"cpu0",10103.2,"transpose3",0.498773
+"float32[6, 1, 64], float32[6, 64, 1500], float32[6, 1, 1500]",1,"cpu0",26731.6,"matmul3",1.31968
+"float32[6, 1, 1500], float32[6, 1, 1500]",1,"cpu0",1161.54,"softmax1",0.0573426
+"float32[1, 6, 1500, 64]",1,"cpu0",17.126,"vm.builtin.reshape",0.000845475
+"float32[6, 1, 1500], float32[6, 1500, 64], float32[6, 1, 64]",1,"cpu0",15293.5,"matmul4",0.755006
+"float32[6, 1, 64]",1,"cpu0",24.543,"vm.builtin.reshape",0.00121164
+"float32[1, 6, 1, 64]",1,"cpu0",11.084,"vm.builtin.reshape",0.000547194
+"float32[1, 1, 6, 64]",1,"cpu0",10.251,"vm.builtin.reshape",0.00050607
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4849.06,"matmul",0.239388
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",22.751,"add3",0.00112317
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",23.876,"add4",0.00117871
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.834,"mean",0.000880427
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.167,"subtract",0.000896867
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.375,"power",0.000759032
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",15.542,"mean",0.000767276
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8.667,"add1",0.000427872
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.042,"tir_sqrt",0.000495753
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.25,"divide",0.000900964
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.125,"multiply",0.000796058
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.918,"add2",0.000785838
+"float32[1, 1, 384], float32[384, 1536], float32[1, 1, 1536]",1,"cpu0",151315,"matmul5",7.47012
+"float32[1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",35.376,"add5",0.00174644
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.876,"divide1",0.00147492
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",211.382,"erf",0.0104355
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.709,"add6",0.00146667
+"float32[1, 1, 1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",30.918,"multiply2",0.00152636
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",27.959,"multiply3",0.00138028
+"float32[1, 1, 1536], float32[1536, 384], float32[1, 1, 384]",1,"cpu0",21918.7,"matmul6",1.08208
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",23.376,"add3",0.00115402
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.417,"add4",0.000859841
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",19.792,"mean",0.00097709
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",16.376,"subtract",0.000808449
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.251,"power",0.000703542
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.459,"mean",0.000713811
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.083,"add1",0.000497777
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.417,"tir_sqrt",0.000464898
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",20.084,"divide",0.000991505
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.167,"multiply",0.000748763
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",15.333,"add2",0.000756958
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4840.23,"matmul",0.238952
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",22.126,"add3",0.00109231
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4819.19,"matmul",0.237913
+"float32[1, 1, 384]",1,"cpu0",26.668,"vm.builtin.reshape",0.00131654
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4891.52,"matmul",0.241484
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",24.543,"add3",0.00121164
+"float32[1, 1, 384]",1,"cpu0",14.542,"vm.builtin.reshape",0.000717908
+"float32[1, 1, 6, 64]",1,"cpu0",12.625,"vm.builtin.reshape",0.00062327
+"float32[1, 1, 6, 64]",1,"cpu0",10.251,"vm.builtin.reshape",0.00050607
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.708,"multiply1",0.000775471
+"float32[1, 1, 384]",1,"cpu0",9.959,"vm.builtin.reshape",0.000491655
+"float32[1, 1, 6, 64]",1,"cpu0",8.625,"vm.builtin.reshape",0.000425798
+"int64[5]",1,"cpu0",13.5,"vm.builtin.make_shape",0.000666467
+"int64[5]",1,"cpu0",12.917,"vm.builtin.make_shape",0.000637685
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",28.501,"concatenate",0.00140703
+"int64[5]",1,"cpu0",10.126,"vm.builtin.make_shape",0.000499899
+"int64[5]",1,"cpu0",9.584,"vm.builtin.make_shape",0.000473142
+"float32[1, 6, 10, 64], float32[1, 6, 1, 64], float32[1, 6, 11, 64]",1,"cpu0",19.626,"concatenate",0.000968895
+"int64[5]",1,"cpu0",10.542,"vm.builtin.make_shape",0.000520437
+"float32[1, 6, 11, 64]",1,"cpu0",11.375,"vm.builtin.reshape",0.00056156
+"float32[1, 6, 1, 64]",1,"cpu0",9.167,"vm.builtin.reshape",0.000452556
+"int64[5]",1,"cpu0",8.25,"vm.builtin.make_shape",0.000407285
+"int64[5]",1,"cpu0",7.876,"vm.builtin.make_shape",0.000388822
+"float32[6, 11, 64], float32[6, 64, 11]",1,"cpu0",94.878,"vm.builtin.call_tir_dyn",0.00468393
+"int64[5]",1,"cpu0",9.709,"vm.builtin.make_shape",0.000479313
+"int64[5]",1,"cpu0",7.876,"vm.builtin.make_shape",0.000388822
+"float32[6, 1, 64], float32[6, 64, 11], float32[6, 1, 11]",1,"cpu0",288.759,"vm.builtin.call_tir_dyn",0.0142554
+"int64[5]",1,"cpu0",11.792,"vm.builtin.make_shape",0.000582146
+"int64[5]",1,"cpu0",8.5,"vm.builtin.make_shape",0.000419627
+"float32[6, 1, 11], float32[6, 1, 11]",1,"cpu0",42.876,"vm.builtin.call_tir_dyn",0.0021167
+"int64[5]",1,"cpu0",10.25,"vm.builtin.make_shape",0.000506021
+"float32[1, 6, 11, 64]",1,"cpu0",12.417,"vm.builtin.reshape",0.000613001
+"int64[5]",1,"cpu0",7.792,"vm.builtin.make_shape",0.000384675
+"float32[6, 1, 11], float32[6, 11, 64], float32[6, 1, 64]",1,"cpu0",134.254,"vm.builtin.call_tir_dyn",0.00662784
+"float32[6, 1, 64]",1,"cpu0",8.5,"vm.builtin.reshape",0.000419627
+"float32[1, 6, 1, 64]",1,"cpu0",9.417,"vm.builtin.reshape",0.000464898
+"float32[1, 1, 6, 64]",1,"cpu0",8.501,"vm.builtin.reshape",0.000419677
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4859.81,"matmul",0.239919
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",21.084,"add3",0.00104087
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",18.418,"add4",0.000909258
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",17.792,"mean",0.000878354
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",16.417,"subtract",0.000810473
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.125,"power",0.000697322
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.583,"mean",0.000719932
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.458,"add1",0.00051629
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",9.833,"tir_sqrt",0.000485435
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",19.459,"divide",0.00096065
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",16.417,"multiply",0.000810473
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",86.253,"add2",0.00425813
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",4840.19,"matmul",0.23895
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",24.668,"add3",0.00121781
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",15.875,"multiply1",0.000783716
+"float32[1, 1, 384]",1,"cpu0",14.708,"vm.builtin.reshape",0.000726103
+"float32[1, 1, 6, 64]",1,"cpu0",9,"vm.builtin.reshape",0.000444311
+"float32[1, 6, 1500, 64]",1,"cpu0",9.459,"vm.builtin.reshape",0.000466971
+"float32[1, 6, 1, 64]",1,"cpu0",8.208,"vm.builtin.reshape",0.000405212
+"float32[6, 1500, 64], float32[6, 64, 1500]",1,"cpu0",9387.16,"transpose3",0.463424
+"float32[6, 1, 64], float32[6, 64, 1500], float32[6, 1, 1500]",1,"cpu0",26787.1,"matmul3",1.32243
+"float32[6, 1, 1500], float32[6, 1, 1500]",1,"cpu0",1122.7,"softmax1",0.0554254
+"float32[1, 6, 1500, 64]",1,"cpu0",18.167,"vm.builtin.reshape",0.000896867
+"float32[6, 1, 1500], float32[6, 1500, 64], float32[6, 1, 64]",1,"cpu0",15539.2,"matmul4",0.767137
+"float32[6, 1, 64]",1,"cpu0",25.834,"vm.builtin.reshape",0.00127537
+"float32[1, 6, 1, 64]",1,"cpu0",10.376,"vm.builtin.reshape",0.000512241
+"float32[1, 1, 6, 64]",1,"cpu0",9.833,"vm.builtin.reshape",0.000485435
+"float32[1, 1, 384], float32[384, 384], float32[1, 1, 384]",1,"cpu0",5001.4,"matmul",0.246909
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",20.834,"add3",0.00102853
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",16.001,"add4",0.000789936
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",19.209,"mean",0.000948308
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",17.459,"subtract",0.000861914
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.376,"power",0.000709713
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.751,"mean",0.000728226
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.417,"add1",0.000514266
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",8.958,"tir_sqrt",0.000442238
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.834,"divide",0.000929795
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.168,"multiply",0.000847548
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.834,"add2",0.000880427
+"float32[1, 1, 384], float32[384, 1536], float32[1, 1, 1536]",1,"cpu0",148846,"matmul5",7.34822
+"float32[1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",36.209,"add5",0.00178756
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",30.751,"divide1",0.00151811
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",198.839,"erf",0.00981627
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.584,"add6",0.0014605
+"float32[1, 1, 1536], float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",31.584,"multiply2",0.00155924
+"float32[1, 1, 1536], float32[1, 1, 1536]",1,"cpu0",29.501,"multiply3",0.0014564
+"float32[1, 1, 1536], float32[1536, 384], float32[1, 1, 384]",1,"cpu0",21937.7,"matmul6",1.08302
+"float32[384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",23.584,"add3",0.00116429
+"float32[1, 1, 384], float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",17.542,"add4",0.000866012
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",18.209,"mean",0.00089894
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",15.792,"subtract",0.000779618
+"float32[1, 1, 384], float32[1, 1, 384]",1,"cpu0",14.417,"power",0.000711737
+"float32[1, 1, 384], float32[1, 1, 1]",1,"cpu0",14.958,"mean",0.000738445
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.459,"add1",0.000516339
+"float32[1, 1, 1], float32[1, 1, 1]",1,"cpu0",10.334,"tir_sqrt",0.000510168
+"float32[1, 1, 384], float32[1, 1, 1], float32[1, 1, 384]",1,"cpu0",18.084,"divide",0.000892769
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",17.125,"multiply",0.000845426
+"float32[1, 1, 384], float32[384], float32[1, 1, 384]",1,"cpu0",18.167,"add2",0.000896867
+"float32[1, 1, 384], float32[384, 51865], float32[1, 1, 51865]",1,"cpu0",975591,"matmul7",48.1629
+"float32[1, 1, 51865], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64], float32[1, 6, 11, 64]",1,"cpu0",33.209,"vm.builtin.make_tuple",0.00163946
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",18.292,"vm.builtin.match_shape",0.000903038
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",10.709,"vm.builtin.match_shape",0.000528681
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",7.959,"vm.builtin.match_shape",0.000392919
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",9.251,"vm.builtin.match_shape",0.000456703
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",8.876,"vm.builtin.match_shape",0.00043819
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",9,"vm.builtin.match_shape",0.000444311
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",9.458,"vm.builtin.match_shape",0.000466922
+"float32[1, 6, 11, 64], int64[5]",1,"cpu0",9.083,"vm.builtin.match_shape",0.000448409

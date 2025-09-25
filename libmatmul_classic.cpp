@@ -2,10 +2,10 @@
 #include <cstdint>
 #include <dlpack/dlpack.h>
 #include <iostream>
-// -------------------- Golden --------------------
+// -------------------- classic --------------------
 // core kernel, operates on one [n, m] x [m, o] -> [n, o]
 
-void matmul_golden(const float* A, const float* B, float* C,
+void matmul_classic(const float* A, const float* B, float* C,
                    int n, int m, int o) {
     for (int i = 0; i < n; ++i) {
         //std::cout<<i<<std::endl;
@@ -33,7 +33,7 @@ void matmul_bxb(std::vector<const DLTensor*>& data_entry_,
         const float* Ab = A + bidx * n * m;
         const float* Bb = B + bidx * m * o;
         float*       Cb = C + bidx * n * o;
-        matmul_golden(Ab, Bb, Cb, n, m, o);
+        matmul_classic(Ab, Bb, Cb, n, m, o);
     }
 }
 
@@ -50,7 +50,7 @@ void matmul_bxs(std::vector<const DLTensor*>& data_entry_,
         const float* Ab = A + bidx * n * m;
 
         float*       Cb = C + bidx * n * o;
-        matmul_golden(Ab, B, Cb, n, m, o);
+        matmul_classic(Ab, B, Cb, n, m, o);
     }
 }
 
