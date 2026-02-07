@@ -43,6 +43,7 @@ Steps to setup:
 5. Setup bananapi runtime and codegen
     
     [set_up_bananapi_rutime_and_codegen.md](set_up_bananapi_rutime_and_codegen.md)
+    Note: changes in TVM's c++ code, requires you to `cmake --build . --parallel $(nproc)`
     
 6. Download whisper-tiny models from hugging face
     
@@ -86,7 +87,8 @@ Note: Bianbu 2.2 is derived from Ubuntu 24.04
 2. Setup bananapi runtime and codegen
     
     [set_up_bananapi_rutime_and_codegen.md](set_up_bananapi_rutime_and_codegen.md)
-    
+    Note: changes in TVM's c++ code, requires you to `cmake --build . --parallel $(nproc)`
+
 3. Compile libmatmul.cpp
     
     For native risc-v compiler
@@ -97,7 +99,7 @@ Note: Bianbu 2.2 is derived from Ubuntu 24.04
     g++ -std=c++11 -shared -fPIC -O3\\
         -march=rv64gcv -mabi=lp64d \\
         -I ~/tvm/3rdparty/dlpack/include \\
-        -o libmatmul.so libmatmul.cpp
+        -o libmatmul.so libmatmul_rvv.cpp
     
     ```
     
@@ -108,10 +110,10 @@ Note: Bianbu 2.2 is derived from Ubuntu 24.04
     
     g++ -std=c++11 -shared -fPIC -O3\\
         -I ~/tvm/3rdparty/dlpack/include \\
-        -o libmatmul.so libmatmul.cpp
+        -o libmatmul.so libmatmul_rvv.cpp
     
     ```
-    Note: you can also try `libmatmul_golden.cpp`. This is a textbook-level implementation of matrix multiplication from linear algebra. Just for testing out the difference with our rvv+algorithmic implementation. The compilation usage is same as the above libmatmul.cpp’s g++ command.
+    Note: you can also try `libmatmul_classic.cpp`. This is a textbook-level implementation of matrix multiplication from linear algebra. Just for testing out the difference with our rvv+algorithmic implementation. The compilation usage is same as the above libmatmul_rvv.cpp’s g++ command.
 4. Download whisper-tiny models from hugging face, this step is necessary, because tokenizer and vocab.json is required
     
     https://huggingface.co/onnx-community/whisper-tiny/tree/main

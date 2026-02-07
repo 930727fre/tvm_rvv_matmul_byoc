@@ -127,8 +127,8 @@ class bananapi_Runtime : public JSONRuntimeBase {
     //A_shape = data_entry_[0]->shape; // vector<int64_t>
     B_shape = nodes_[1].GetOpShape()[0]; // vector<int64_t>
     //B_shape = data_entry_[1]->shape; // vector<int64_t>
-    std::cout<<A_shape<<std::endl;
-    std::cout<<B_shape<<std::endl;
+    // std::cout<<A_shape<<std::endl;
+    // std::cout<<B_shape<<std::endl;
     
     int64_t x = A_shape[A_shape.size() - 3];
     int64_t n = A_shape[A_shape.size() - 2];

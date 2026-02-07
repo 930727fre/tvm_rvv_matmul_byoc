@@ -22,3 +22,5 @@ To know more, you must checkout zin’s code
 ## bananapi.cmake
 
 Note: `list(APPEND RUNTIME_BANANAPI_SRCS src/runtime/contrib/bananapi/libmatmul.cpp)` is commented, because this is static-compilation of BYOC approach, which requires you to write libmatmul.h (which is use for declaring `matmul()` in bananapi_runtime.cc). In our case, we cross-compile 3 whisper-tiny models for risc-v board, and TVM runtime compilation on x86 can’t use risc-v toolchain, so we use `dlopen()` approach, which does not require libmatmul.cpp to be compiled in x86 TVM compilation and can be later compiled by ourself on banana pi using its native `g++`.
+
+Note: changes in TVM's c++ code, requires you to `cmake --build . --parallel $(nproc)`
