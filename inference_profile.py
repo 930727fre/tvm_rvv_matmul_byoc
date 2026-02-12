@@ -1,5 +1,3 @@
-# This is just above inference.py ’s profile code all un-commented.
-
 import numpy as np
 import tvm
 from tvm import relax, runtime
@@ -79,11 +77,11 @@ encoder_vm = VirtualMachine(runtime.load_module("./onnx/encoder_model.so"), tvm.
 # === Profile code block ===
 
 # Profile the encoder execution
-# profile_report = encoder_vm.profile("main", tvm.nd.array(mel)).csv()
-# insert_profile_report(profile_report)
+profile_report = encoder_vm.profile("main", tvm.nd.array(mel)).csv()
+insert_profile_report(profile_report)
 # Convert to CSV and save to file
-# with open("./profile_data/encoder.csv", "w") as f:
-#     f.write(profile_report)
+with open("./profile_data/encoder.csv", "w") as f:
+    f.write(profile_report)
 
 # === End of Profile code block ===
 
@@ -117,11 +115,11 @@ decoder_prefill_vm = VirtualMachine(
 
 
 # print("\n=== Step 0 (Prefill) - Profiling ===")
-# profile_report = decoder_prefill_vm.profile("main", *inputs).csv()
-# insert_profile_report(profile_report)
+profile_report = decoder_prefill_vm.profile("main", *inputs).csv()
+insert_profile_report(profile_report)
 # # Save CSV-formatted profiling report
-# with open("./profile_data/decoder_prefill.csv", "w") as f:
-#     f.write(profile_report)
+with open("./profile_data/decoder_prefill.csv", "w") as f:
+    f.write(profile_report)
 # === End of Decoder profiling ===
 
 # Get the actual output (without profiling)
@@ -176,13 +174,13 @@ for step in range(1, max_length):
     # Profile every step (optional: skip warm-up steps)
     # === Decoder profiling ===
 
-    # profile_report = decoder_vm.profile("main", *inputs).csv()
-    # insert_profile_report(profile_report)
+    profile_report = decoder_vm.profile("main", *inputs).csv()
+    insert_profile_report(profile_report)
 
     # Save with step number in filename
 
-    # with open(f"./profile_data/decoder_step_{step}.csv", "w") as f:
-    #     f.write(profile_report)
+    with open(f"./profile_data/decoder_step_{step}.csv", "w") as f:
+        f.write(profile_report)
     # === Decoder profiling ===
 
 
@@ -216,10 +214,10 @@ print("\n📝 Transcription:\n", transcript)
 
 """Write aggregated results to a CSV file."""
 # === profiling data aggregation === 
-# with open("./profile_data/aggregation.csv", "w") as f:
-#     f.write("Name,Total Duration (us),Total Count\n")
-#     for name, (duration, count) in sorted(profile_agg.items(), key=lambda x: -x[1][0]):
-#         f.write(f"{name},{duration},{count}\n")
+with open("./profile_data/aggregation.csv", "w") as f:
+    f.write("Name,Total Duration (us),Total Count\n")
+    for name, (duration, count) in sorted(profile_agg.items(), key=lambda x: -x[1][0]):
+        f.write(f"{name},{duration},{count}\n")
 # === profiling data aggregation === 
 end_time_all = datetime.now()
 print("End of all:", end_time_all)
